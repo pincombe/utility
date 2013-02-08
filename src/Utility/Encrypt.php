@@ -8,7 +8,7 @@ class Encrypt
     private $cypher;
     private $mode;
 
-    public function __construct($key, $cypher = '', $mode = '')
+    public function __construct($key, $cypher = MCRYPT_RIJNDAEL_256, $mode = MCRYPT_MODE_CFB)
     {
 	    $this->key = $key;
 
